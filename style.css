@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
 html {
@@ -11,9 +10,6 @@ html {
 
 :root {
     --common-font: "Josefin Sans", sans-serif;
-}
-
-:root {
     --main-font: "Heebo", sans-serif;
 }
 
@@ -64,7 +60,6 @@ nav h1:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    /* Changed from left to right */
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -73,7 +68,6 @@ nav h1:hover {
 
 .sidenav a {
     padding: 8px 32px 8px 8px;
-    /* Changed padding to align text to the right */
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -89,7 +83,6 @@ nav h1:hover {
     position: absolute;
     top: 0;
     left: 0;
-    /* Changed from right to left */
     font-size: 36px;
 }
 
@@ -161,14 +154,12 @@ header span {
     height: 90vh;
     margin-top: 10px;
     margin-bottom: 40px;
-
 }
 
 .leftt {
     width: calc(40%);
     display: flex;
     border-radius: 30% 70% 53% 47% / 39% 31% 69% 61%;
-
     background-image: url(IMG_20240426_130102_542.jpg);
     background-position: center;
     background-size: cover;
@@ -190,7 +181,6 @@ header span {
 
 .leftt:hover {
     box-shadow: 0px 0px 30px 2px rgba(255, 255, 0, 0.159);
-
 }
 
 .rightt {
@@ -223,9 +213,12 @@ header span {
     margin: 0;
     font-size: 20px;
     font-family: var(--common-font);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-
-
 
 .rightt div h1 {
     font-size: 35px;
@@ -244,8 +237,6 @@ header span {
 .secnd-saction {
     background-color: #181818;
     padding-top: 50px;
-
-
 }
 
 .skill-animation {
@@ -263,7 +254,6 @@ header span {
 .skill-img {
     display: flex;
     justify-content: space-between;
-
 }
 
 .skill-img div {
@@ -273,7 +263,6 @@ header span {
     align-items: center;
     width: 100vw;
 }
-
 
 .skill-img div img {
     aspect-ratio: 1/1;
@@ -286,16 +275,11 @@ header span {
 .skill-img div img:hover {
     scale: 1.1;
     transition: 0.3s;
-
-
 }
-
 
 .skill-img div:last-child img {
     aspect-ratio: 1/1;
     height: 230px;
-
-
 }
 
 .sidenav a:not(:first-child) {
@@ -321,24 +305,22 @@ header span {
     width: 100%;
 }
 
-@media (max-width:1475px) {
+/* Max-width 1475px */
+@media (max-width: 1475px) {
     .skill-img div img {
         height: 250px;
     }
 
     .skill-img div:last-child img {
-        aspect-ratio: 1/1;
         height: 200px;
     }
 
     .skill-animation span {
         font-size: 7rem;
-        color: white;
-        font-family: var(--common-font);
     }
 
     .leftt img {
-        width: calc(100%);
+        width: 100%;
         border-radius: 20px;
         object-fit: cover;
     }
@@ -355,16 +337,28 @@ header span {
         font-size: 50px !important;
         margin: 0 !important;
     }
-
-
-
 }
 
-/* one of the main media  */
-@media (max-width:995px) {
+/* Max-width 1250px */
+@media (max-width: 1250px) {
+    .skill-img div img {
+        height: 200px;
+    }
+
+    .skill-img div:last-child img {
+        height: 150px;
+    }
+
+    .first-section .leftt {
+        min-height: 500px;
+    }
+}
+
+/* Max-width 1180px */
+@media (max-width: 1180px) {
     .leftt {
         border-radius: 10px !important;
-        height: calc(40%) !important;
+        height: 40% !important;
     }
 
     .first-section {
@@ -379,6 +373,16 @@ header span {
 
     .skill-img {
         flex-wrap: wrap;
+    }
+
+    .skill-img div img {
+        height: 280px !important;
+        width: 280px !important;
+    }
+
+    .skill-img div:last-child img {
+        height: 230px !important;
+        width: 230px !important;
     }
 
     .footeer {
@@ -400,25 +404,10 @@ header span {
         align-items: center;
         justify-content: center;
     }
-  
 }
 
-@media (max-width:1250px) {
-    .skill-img div img {
-        height: 200px;
-    }
-
-    .skill-img div:last-child img {
-        aspect-ratio: 1/1;
-        height: 150px;
-    }
-
-    .first-section .leftt {
-        min-height: 500px;
-    }
-}
-
-@media (max-width:1024px) {
+/* Max-width 1024px */
+@media (max-width: 1024px) {
     header span {
         display: block;
     }
@@ -433,7 +422,6 @@ header span {
         align-items: start;
     }
 }
-
 
 
 .skill-img div h1 {
