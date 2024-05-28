@@ -366,7 +366,11 @@ header span {
         flex-wrap: wrap;
         gap: 20px;
     }
-
+  
+    .skill-img div h1 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
     .secnd-saction {
         padding-top: 30px;
     }
