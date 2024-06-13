@@ -1,3 +1,14 @@
+function scrollToTop() {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner of the page
+}
+
+// Call the function when the page reloads
+window.addEventListener('load', scrollToTop);
+
+
+
+
+
 function isLaptopScreen() {
     const minWidthForLaptop = 1024;
     return window.innerWidth >= minWidthForLaptop;
