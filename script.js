@@ -63,7 +63,7 @@ anima.from("#skiills #myy", {
 })
 anima.from("#skiills #skull", {
     x: -370,
-    rotate: 180,
+    
     opacity: 0,
     duration: 0.2,
     stagger: 0.2,
